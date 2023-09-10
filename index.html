@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Hunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://t4.ftcdn.net/jpg/00/36/89/17/360_F_36891738_7UjniA1fCTaqn7VshH4i7e4vx2lV6I93.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Emilys+Candy&family=Merriweather:ital@1&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="heading" class="word">
+            <div class="firstWord">Candy</div>
+            <div class="secondWord">Treasure</div>
+            <div class="thirdWord">Game</div>
+        </h1>
+        <div id="intro">
+
+
+
+            <h2 id="subheading">Find The Sweet Spot</h2>
+            <h2 class="rules">Game Rules</h2>
+            <ul class="game-rules">
+                <li>Click the boxes to reveal.</li>
+                <li>If you click the chocolate, you lose!</li>
+                <li>If you click the lollipop, you win!</li>
+            </ul>
+        </div>
+        <div id="gameboard">
+            <table border="1">
+                <!--Row 1-->
+                <tr>
+                    <!--Column 1-->
+                    <td id="0" onclick="treasure(0)">
+                        <div class="candy">🍬</div>
+                    </td>
+
+                    <td id="1" onclick="treasure(1)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="2" onclick="treasure(2)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+                <!--Row 2-->
+                <tr>
+                    <!--Column 2-->
+                    <td id="3" onclick="treasure(3)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="4" onclick="treasure(4)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="5" onclick="treasure(5)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+                <!--Row 3-->
+                <tr>
+                    <!--Column 3-->
+                    <td id="6" onclick="treasure(6)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="7" onclick="treasure(7)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="8" onclick="treasure(8)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+                <!--Row 4-->
+                <tr>
+                    <!--Column 4-->
+                    <td id="9" onclick="treasure(9)">
+                        <div class="candy">🍬</div>
+                    </td>
+
+                    <td id="10" onclick="treasure(10)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="11" onclick="treasure(11)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+                <!--Row 5-->
+                <tr>
+                    <!--Column 5-->
+                    <td id="12" onclick="treasure(12)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="13" onclick="treasure(13)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="14" onclick="treasure(14)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+                <!--Row 6-->
+                <tr>
+                    <!--Column 6-->
+                    <td id="15" onclick="treasure(15)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="16" onclick="treasure(16)">
+                        <div class="candy">🍬</div>
+                    </td>
+                    <td id="17" onclick="treasure(17)">
+                        <div class="candy">🍬</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" onclick="location.reload()">Restart Game</button>
+        <footer id="footer-text">
+            &copy; Patsy & Tomas
+            <a href="https://www.king.com/game/candycrush" target="_blank">Similar Candy Game</a>
+            <a href="#heading">Go to Top</a>
+        </footer>
+    </div>
+    <script type="text/javascript" src="javascript-practice.js"></script>
+</body>
+
+</html>

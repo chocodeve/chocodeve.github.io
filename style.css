@@ -1,0 +1,350 @@
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/01/35/81/99/360_F_135819993_bSNjZzDBWQwDc8nVhUXQZ3WtMEvPzz4R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+#container {
+    font-family: 'Emilys Candy', cursive;
+    color: red;
+    text-align: center;
+    width: 600px;
+    height: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 150px;
+    border: dotted 5px;
+    opacity: 80%;
+    border-radius: 50px;
+    font-weight: bold;
+
+
+}
+
+
+.word {
+    font-family: 'Emilys Candy', cursive;
+    text-align: center;
+    margin-top: -150px;
+    padding: 10px;
+    font-size: 60px;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: violet;
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+}
+
+
+
+h2 {
+    font-family: 'Emilys Candy', cursive;
+    text-align: center;
+    
+}
+
+
+li {
+    font-family: 'Emilys Candy', cursive;
+    text-align: center;
+    list-style-type: none;
+
+
+}
+
+
+table {
+    font-family: 'Emilys Candy', cursive;
+    color: red;
+    text-align: center;
+
+
+}
+
+
+td {
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    border: solid 1px;
+    font-size: 40px;
+    background-color: limegreen;
+
+
+}
+
+
+.candy {
+    animation-name: beat;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+td:hover {
+    cursor: pointer;
+}
+
+
+#footer-text {
+    margin-top: 60px;
+}
+
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-spacing: 100px;
+    margin-bottom: 10px;
+
+
+}
+
+
+button {
+    background-color: violet;
+    border: none;
+    color: yellow;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Emilys Candy', cursive;
+    font-size: large;
+
+
+
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+#intro {
+    border: dotted;
+    background-color: violet;
+    color: yellow;
+    width: 400px;
+
+
+
+    border-radius: 50px;
+    margin-bottom: 75px;
+
+
+    margin: auto;
+    position: relative;
+
+
+}
+
+
+/*.rules {
+    color: navy;
+} */
+
+
+@keyframes beat {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.rules {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+#subheading {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+
+
+    font-size: 30px;
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+.word {
+
+
+    float: left;
+
+
+    animation-name: bounceInDown;
+    -webkit-animation-name: bounceInDown;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+
+.firstWord {
+    @extend .word;
+
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+}
+
+
+.secondWord {
+    @extend .word;
+
+
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+
+.thirdWord {
+    @extend .word;
+
+
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+
+
+}
+
+
+
+@-webkit-keyframes bounceInDown {
+
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+@keyframes bounceInDown {
+
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
